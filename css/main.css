@@ -123,9 +123,11 @@ p {
 	font-size: 0.875em;
 	line-height: 1.285em;
 }
-a {
-	color: #e2e3ed;
-	text-decoration: none;
+img {
+	width: 100%;
+}
+figure {
+	margin: 0;
 }
 address {
 	font-style: normal;
@@ -187,20 +189,8 @@ header nav ul {
 header nav ul li {
 	font-size: 1.125em;
 }
-/*---Main Styles---*/
-article {
-	width: 45%;
-}
-reviews {
-	width: 80%;
-}
-.features p {
-	margin: 0;
-}
-
 /*---Footer Styles---*/
 footer {
-	flex-direction: column;
 	text-align: center;
 	flex-direction: column;
 }
@@ -210,11 +200,6 @@ footer p {
 footer .content-wrapper {
 	width: 55%;
 	margin: 50px 0;
-}
-.copywrite {
-	display: flex;
-	justify-content: space-around;
-	align-items: center;
 }
 footer .contact {
 	margin-bottom: 50px;
@@ -324,11 +309,25 @@ input [type=button] {
 }
 /***********ABOUT PAGE***********/
 .mission {
-	background-color: #52715;
+	background-color: #527158;
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	flex-flow: row wrap;
+}
+.map figure { 
+	width: 100%;
+	height: 0;
+	padding-bottom: 125%;
+	overflow: hidden;
+	position: relative;	
+}
+.map iframe {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
 }
 .contact-section {
 	background-color: #2a423a;
@@ -337,23 +336,10 @@ input [type=button] {
 	align-items: center;
 	flex-flow: row wrap;
 }
-.general-info {
+.contact-content p {
 	margin: 0;
 }
-.map figure { 
-	width: 100%;
-	height:100%;
-	position:absolute;
-	overflow: hidden;
-	position: relative;	
-}
-.map iframe {
-	width: 100%;
-	height 100%;
-	position: absolute;
-	top: 0;
-	left: 0;
-}
+
 /***********FAQ PAGE***********/
 .faq {
 	background-color: #527158;
@@ -371,7 +357,7 @@ input [type=button] {
 }
 .faq h2 {
 	margin-bottom: 40px;
-	line-height: 1 em;
+	line-height: 1;
 }
 .faq .questions {
 	margin-bottom: 50px;
@@ -476,7 +462,7 @@ input [type=button] {
 	/*General styles */
 	.content-wrapper {
 		max-width: 640;
-		margin: 100px;
+		margin: 100px 0;
 	}
 	h2 {
 		font-size: 2.25em;
@@ -498,10 +484,10 @@ input [type=button] {
 		justify-content: space-between;	
 	}
 	header figure {
-		width: 3o%;
+		width: 30%;
 	}
 	.header-nav {
-		width: 25%;
+		width: 20%;
 	}
 	header nav ul {
 		justify-content: space-between;
@@ -516,7 +502,7 @@ input [type=button] {
 		min-height: 600px;
 	}
 	.hero-area h1 {
-		font-size: 2.25em;
+		font-size: 3em;
 		line-height: 1em;
 		margin: 0;
 	}
@@ -529,16 +515,18 @@ input [type=button] {
 	}
 	aside .content-wrapper .form-description, 
 	aside .content-wrapper .form {
-		width: 50%;
+		width: 35%;
 		margin: 0;
 	}
 	/*-Features-*/
+	.features h2 {
+		margin-bottom: 20px;
+	}
 	.features article {
 		display: flex;
 		justify-content: center;
 		align-items: center;
 		flex-flow: column wrap;
-		flex-basis: auto;
 		flex-basis: 50%;
 	}
 	.features .features-item-description {
@@ -562,7 +550,7 @@ input [type=button] {
 	}
 	/*-Footer-*/
 	footer .content-wrapper {
-		width: 60%;
+		width: 65%;
 		margin: 100px 0;
 	}
 	.footer-content{
@@ -579,7 +567,7 @@ input [type=button] {
 		margin-bottom: 40px;
 	}
 	footer p {
-		line-height: 1.125em;
+		line-height: 1.128 em;
 	}
 	footer .copywrite {
 		width: 100%;
@@ -592,8 +580,11 @@ input [type=button] {
 		align-items: center;
 		padding-top: 95px;
 	}
-	.mission-paragraph {
+	.mission-content p {
 		width: 45%;
+	}
+	.map figure {
+		padding-bottom: 45.5%;
 	}
 	.content-section .content-wrapper h2 {
 		width: 80%;
@@ -603,12 +594,15 @@ input [type=button] {
 		justify-content: space-between;
 		align-items: flex-start;
 	}
+	.content-content h4 {
+		font-size: 1.5em;
+	}
 /*======FAQ======*/
 	.faq .content-wrapper {
 		justify-content: space-between;
 	}
 	.question {
-		flex-basis: 40%;
+		flex-basis: 45%;
 	}
 	.faq h2 {
 		width: 100%;
@@ -650,7 +644,7 @@ input [type=button] {
 	}
 	aside .content-wrapper .form-description,
 	aside .content-wrapper .form {
-		width: 30%;
+		width: 40%;
 	}
 	
 	.form-description p {
@@ -676,6 +670,9 @@ input [type=button] {
 	}
 	
 	/*======about page======*/
+	.map figure {
+		padding-bottom: 37.5%;
+	}
 	.mission h2,
 	.contact-section
 	.content-wrapper h2 {
