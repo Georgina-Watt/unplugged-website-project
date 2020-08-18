@@ -94,7 +94,7 @@ html {
 }
 body {
 	font-family: 'Open Sans', sans-serif;
-	font size 1em;
+	font-size: 1em;
 	text-align: left;
 	color: #e2e3ed;
 }
@@ -471,7 +471,7 @@ input [type=button] {
    These examples override the primary ('mobile first') styles.
    Modify as content requires.
    ========================================================================== */
-@media only screen and (min-width: 768) {
+@media only screen and (min-width: 768px) {
 	/********Tablet styles here********/
 	
 	/*General styles */
@@ -545,7 +545,7 @@ input [type=button] {
 		flex-basis: 50%;
 	}
 	.features .features-item-description {
-		width: 60%;
+		width: 62%;
 	}
 	/*-Reviews-*/
 	.reviews article {
@@ -568,7 +568,7 @@ input [type=button] {
 		width: 65%;
 		margin: 100px 0;
 	}
-	.footer-content{
+	footer .footer-content{
 		display: flex;
 		justify-content: space-between;
 		align-items: center;
@@ -582,7 +582,11 @@ input [type=button] {
 		margin-bottom: 40px;
 	}
 	footer p {
-		line-height: 1.128 em;
+		line-height: 1.128em;
+	}
+	footer .social-icons {
+		width: 12.5em;
+		justify-content: space-between;
 	}
 	footer .copywrite {
 		width: 100%;
@@ -593,7 +597,7 @@ input [type=button] {
 		display: flex;
 		justify-content: space-between;
 		align-items: center;
-		padding-top: 95px;
+		padding-top: 20px;
 	}
 	.mission-content p {
 		width: 45%;
@@ -659,7 +663,7 @@ input [type=button] {
 	}
 	aside .content-wrapper .form-description,
 	aside .content-wrapper .form {
-		width: 40%;
+		width: 30%;
 	}
 	
 	.form-description p {
@@ -674,10 +678,13 @@ input [type=button] {
 	}
 	/*--reviews--*/
 	.reviews article div {
-		width:42%;
+		width:50%;
 	}
 	.reviews h2 {
 		padding-botton: 50px;
+	}
+	reviews article div {
+		width: 42%;
 	}
 	/*Footer*/
 	footer h4 {
@@ -692,7 +699,7 @@ input [type=button] {
 	.contact-section
 	.content-wrapper h2 {
 		width: 95%;
-		font-size: 1.875em;
+		font-size: 3em;
 	}
 	.contact-section h4 {
 		font-size: 1.875em;		
