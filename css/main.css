@@ -86,7 +86,6 @@ textarea {
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
-*/
 /* General Styles */
 
 html {
@@ -111,7 +110,7 @@ a {
 h2 {
 	font-family: 'Poppins', sans-serif;
 	font-weight: 500;
-	font-size: 1.875;
+	font-size: 1.875em;
 	margin: 0;
 	
 }
@@ -120,10 +119,10 @@ h4 {
 	font-family: 'Poppins', sans-serif;
 	font-weight: 500;
 	font-size: 1.125em;
-	margin: 20px, 0;
+	margin: 20px 0;
 }
 p {
-	font-size: 0.875em;
+	font-size: .875em;
 	line-height: 1.285em;
 }
 img {
@@ -170,14 +169,14 @@ header figure {
 }
 .header-divider {
 	background: #3a3a3a;
+	height: 1px;
 	width: 100%;
-	padding: 15 0px;
 	margin: 10px 0 20px 0;
 }
 header nav {
 	width: 60%;
 	font-size: 1.125em;
-	font-weight: 700px;
+	font-weight: 700;
 	text-transform: uppercase;
 	display: flex;
 	justify-content: space-around;
@@ -186,7 +185,7 @@ header nav {
 }
 header nav ul {
 	display: flex;
-	justify-content: space-around;	
+	justify-content: space-between;	
 	width: 100%;
 }
 header nav ul li {
@@ -265,7 +264,7 @@ input [type=text] {
 }
 input [type=button] {
 	width: 100%;
-	padding: 20px, 0;
+	padding: 20px 0;
 	margin-top: 20px;
 	background-color: #2a423a;
 	font-family: 'Poppins', Helvetica, Arial, sans-serif;
@@ -292,7 +291,7 @@ input [type=button] {
 	width: 63%;
 	margin: 30px 0;
 }
-.features  .features-item-description {
+.features .features-item {
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -476,7 +475,7 @@ input [type=button] {
 	
 	/*General styles */
 	.content-wrapper {
-		max-width: 640;
+		max-width: 640px;
 		margin: 100px 0;
 	}
 	h2 {
@@ -671,17 +670,17 @@ input [type=button] {
 	}
 	/*--Features--*/
 	.features h2 {
-		width: 90;
+		width: 90%;
 	}
 	.features article {
 		flex-basis: 33%;
 	}
 	/*--reviews--*/
 	.reviews article div {
-		width:50%;
+		width: 50%;
 	}
 	.reviews h2 {
-		padding-botton: 50px;
+		padding-bottom: 50px;
 	}
 	reviews article div {
 		width: 42%;
